@@ -95,7 +95,7 @@ export default function HeroSection() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full sm:w-auto mb-12">
             <Link
-              href="/contact"
+              href="/services"
               className="w-full sm:w-auto px-8 py-4 bg-primary text-primary-foreground rounded-full text-base font-semibold flex items-center justify-center gap-3 group transition-all hover:bg-secondary shadow-lg">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect width="7" height="7" x="3" y="3" rx="1" />
