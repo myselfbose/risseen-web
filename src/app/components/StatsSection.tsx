@@ -88,7 +88,7 @@ export default function StatsSection() {
             </div>
           </div>
           <div className="w-full md:w-3/4">
-            <h2 className="text-display-lg md:text-display-xl font-display font-light text-white/90 leading-[1.1] tracking-tight">
+            <h2 className="text-3xl  font-display font-light text-white/90 leading-[1.1] tracking-tight">
               At Risseen Merchandise, we believe procurement isn&apos;t just about sourcing — it&apos;s about{' '}
               <span className="text-white font-normal">building partnerships</span>.{' '}
               <span className="text-white/30">

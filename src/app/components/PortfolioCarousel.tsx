@@ -147,9 +147,9 @@ export default function PortfolioCarousel() {
               </div>
 
               {/* Year badge */}
-              <div className="absolute top-4 right-4 px-2 py-1 bg-background/80 backdrop-blur-sm rounded-full text-xs font-semibold text-foreground border border-border">
+              {/* <div className="absolute top-4 right-4 px-2 py-1 bg-background/80 backdrop-blur-sm rounded-full text-xs font-semibold text-foreground border border-border">
                 {project.year}
-              </div>
+              </div> */}
             </div>
 
             {/* Card info */}

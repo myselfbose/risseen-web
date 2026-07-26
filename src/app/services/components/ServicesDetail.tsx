@@ -150,12 +150,12 @@ export default function ServicesDetail() {
           className={`flex flex-col ${seg?.flip ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-stretch gap-0 border-b border-border py-16 lg:py-20 gap-y-10 lg:gap-x-16`}>
           
             {/* Image Side */}
-            <div className="w-full lg:w-5/12 relative overflow-hidden rounded-2xl min-h-[280px] lg:min-h-[400px] group flex-shrink-0">
+            <div className="w-full lg:w-5/12 relative overflow-hidden rounded-2xl h-[260px] sm:h-[320px] lg:h-[420px] group flex-shrink-0">
               <AppImage
               src={seg?.image}
               alt={seg?.imageAlt}
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0" />
+              className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0" />
             
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5">

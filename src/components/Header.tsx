@@ -31,6 +31,19 @@ export default function Header() {
     }
   }, [menuOpen]);
 
+  // Minimal change: make text color depend on scrolled OR page type
+  const navTextClass = scrolled
+    ? 'text-foreground'
+    : isDarkPage
+    ? 'text-white/70'
+    : 'text-muted-foreground';
+
+  const navHoverClass = scrolled
+    ? 'hover:text-foreground'
+    : isDarkPage
+    ? 'hover:text-white'
+    : 'hover:text-foreground';
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -47,12 +60,12 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className={`hidden md:flex items-center gap-8 text-sm font-medium ${isDarkPage ? 'text-white/70' : 'text-muted-foreground'}`}>
+        <div className={`hidden md:flex items-center gap-8 text-sm font-medium ${navTextClass}`}>
           {navLinks?.map((link) => (
             <Link
               key={link?.href}
               href={link?.href}
-              className={`transition-colors duration-200 relative group ${isDarkPage ? 'hover:text-white' : 'hover:text-foreground'}`}
+              className={`transition-colors duration-200 relative group ${navHoverClass}`}
             >
               {link?.label}
               <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
@@ -74,7 +87,7 @@ export default function Header() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-card transition-colors"
+            className={`md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-card transition-colors ${navTextClass}`}
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -84,9 +97,9 @@ export default function Header() {
               </svg>
             ) : (
               <>
-                <span className="w-5 h-0.5 bg-foreground rounded-full" />
-                <span className="w-5 h-0.5 bg-foreground rounded-full" />
-                <span className="w-3.5 h-0.5 bg-foreground rounded-full" />
+                <span className="w-5 h-0.5 bg-current rounded-full" />
+                <span className="w-5 h-0.5 bg-current rounded-full" />
+                <span className="w-3.5 h-0.5 bg-current rounded-full" />
               </>
             )}
           </button>
@@ -99,7 +112,7 @@ export default function Header() {
             <Link
               key={link?.href}
               href={link?.href}
-              className={`text-base font-medium py-2 border-b border-border/50 transition-colors ${isDarkPage ? 'text-white hover:text-accent' : 'text-foreground hover:text-accent'}`}
+              className={`text-base font-medium py-2 border-b border-border/50 transition-colors ${navTextClass} ${navHoverClass}`}
               onClick={() => setMenuOpen(false)}
             >
               {link?.label}
@@ -110,7 +123,7 @@ export default function Header() {
             className="mt-2 px-5 py-3 bg-primary text-primary-foreground rounded-full text-sm font-semibold text-center"
             onClick={() => setMenuOpen(false)}
           >
-            Request a Quote
+            Contact
           </Link>
         </div>
       )}

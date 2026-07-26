@@ -39,14 +39,14 @@ export default function CtaSection() {
           
 
           {/* Background image */}
-          <div className="absolute inset-0 opacity-10">
+          {/* <div className="absolute inset-0 opacity-10">
             <AppImage
               src="https://images.unsplash.com/photo-1613484259813-6caafbfb4f2f"
               alt="Corporate office building exterior with glass facade, deep shadows, and dramatic low-angle night lighting"
               fill
               className="object-cover" />
             
-          </div>
+          </div> */}
 
           {/* Left: Typography */}
           <div className="relative z-10 flex flex-col justify-center lg:pt-12 flex-1">
@@ -80,10 +80,10 @@ export default function CtaSection() {
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </Link>
-                <a
+                {/* <a
                   href="#"
                   className="w-full py-3.5 px-6 bg-card border border-border text-foreground rounded-xl font-semibold text-sm flex items-center justify-center gap-2 hover:bg-border/40 transition-colors"
-                  download>
+                >
                   
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -91,7 +91,7 @@ export default function CtaSection() {
                     <line x1="12" x2="12" y1="15" y2="3" />
                   </svg>
                   <span>Download Company Profile</span>
-                </a>
+                </a> */}
               </div>
 
               <div className="flex items-center justify-between border-t border-border pt-5">
@@ -115,11 +115,11 @@ export default function CtaSection() {
           </div>
 
           {/* Watermark */}
-          <div className="absolute bottom-0 left-0 w-full flex justify-center pointer-events-none opacity-[0.04] select-none overflow-hidden">
+          {/* <div className="absolute bottom-0 left-0 w-full flex justify-center pointer-events-none opacity-[0.04] select-none overflow-hidden">
             <span className="font-display font-bold text-white leading-none tracking-tighter" style={{ fontSize: 'clamp(4rem, 14vw, 12rem)', transform: 'translateY(15%)' }}>
               RISSEEN
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>);

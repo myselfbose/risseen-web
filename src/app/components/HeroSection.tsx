@@ -177,7 +177,7 @@ export default function HeroSection() {
             <div className="absolute -bottom-10 -left-4 md:-left-10 w-64 bg-card border border-border shadow-2xl rounded-2xl p-5 transform rotate-[-3deg] hover:rotate-0 transition-transform duration-500 z-20">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Company Profile</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A3A2A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                   <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
                 </svg>
@@ -210,11 +210,11 @@ export default function HeroSection() {
             {/* Floating Service Card */}
             <div className="hidden md:block absolute top-10 -right-10 w-44 bg-primary rounded-2xl p-4 shadow-2xl z-30 transform rotate-[2deg] hover:rotate-0 transition-transform duration-500 border border-primary/50">
               <div className="flex items-center justify-between text-primary-foreground/60 mb-3">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5F2E8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                 </svg>
                 <div className="flex gap-2">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5F2E8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
                     <polyline points="16 6 12 2 8 6" />
                     <line x1="12" y1="2" x2="12" y2="15" />
@@ -230,7 +230,7 @@ export default function HeroSection() {
                   className="w-full h-full object-cover" />
                 
               </div>
-              <p className="text-xs text-primary-foreground/60 mb-0.5">Segment</p>
+              <p className="text-xs text-[#F5F2E8] mb-0.5">Segment</p>
               <p className="font-display text-base text-primary-foreground font-light leading-tight">Event Management</p>
             </div>
           </div>
