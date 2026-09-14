@@ -8,6 +8,7 @@ const segments = [
   'Printing',
   'Interior Works',
   'General Order Supply',
+  "Sakhi'z - Fashion & Apparel",
   'Import-Export',
   'Multiple Segments',
 ];

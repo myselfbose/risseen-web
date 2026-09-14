@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useState } from 'react';
 const stats = [
   { value: 200, suffix: '+', label: 'Projects Delivered', description: 'Across all business segments' },
   { value: 50, suffix: '+', label: 'Corporate Clients', description: 'Including govt. organisations' },
-  { value: 7, suffix: '', label: 'Business Segments', description: 'Under one roof' },
+  { value: 8, suffix: '', label: 'Business Segments', description: 'Under one roof' },
   { value: 10, suffix: '+', label: 'Years of Operation', description: 'Trusted industry experience' },
 ];
 

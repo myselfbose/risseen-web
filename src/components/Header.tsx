@@ -31,24 +31,13 @@ export default function Header() {
     }
   }, [menuOpen]);
 
-  // Minimal change: make text color depend on scrolled OR page type
-  const navTextClass = scrolled
-    ? 'text-foreground'
-    : isDarkPage
-    ? 'text-white/70'
-    : 'text-muted-foreground';
-
-  const navHoverClass = scrolled
-    ? 'hover:text-foreground'
-    : isDarkPage
-    ? 'hover:text-white'
-    : 'hover:text-foreground';
+  
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-sm'
+          ? 'bg-background/50 backdrop-blur-md border-b border-border shadow-sm'
           : 'bg-transparent'
       }`}
     >
@@ -60,12 +49,12 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className={`hidden md:flex items-center gap-8 text-sm font-medium ${navTextClass}`}>
+        <div className={`hidden md:flex items-center gap-8 text-sm font-medium text-[#EE811D]`}>
           {navLinks?.map((link) => (
             <Link
               key={link?.href}
               href={link?.href}
-              className={`transition-colors duration-200 relative group ${navHoverClass}`}
+              className={`transition-colors duration-200 relative group`}
             >
               {link?.label}
               <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
@@ -87,7 +76,7 @@ export default function Header() {
 
           {/* Mobile hamburger */}
           <button
-            className={`md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-card transition-colors ${navTextClass}`}
+            className={`md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-card transition-colors`}
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -112,7 +101,7 @@ export default function Header() {
             <Link
               key={link?.href}
               href={link?.href}
-              className={`text-base font-medium py-2 border-b border-border/50 transition-colors ${navTextClass} ${navHoverClass}`}
+              className={`text-base font-medium py-2 border-b border-border/50 transition-colors`}
               onClick={() => setMenuOpen(false)}
             >
               {link?.label}

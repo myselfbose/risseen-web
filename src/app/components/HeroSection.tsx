@@ -184,7 +184,7 @@ export default function HeroSection() {
               </div>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                { val: '7+', label: 'Segments' },
+                { val: '8+', label: 'Segments' },
                 { val: '200+', label: 'Projects' },
                 { val: '50+', label: 'Clients' },
                 { val: '10+', label: 'Years' }].

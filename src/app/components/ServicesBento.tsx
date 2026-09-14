@@ -5,14 +5,14 @@ import AppImage from '@/components/ui/AppImage';
 
 /*
 BENTO GRID AUDIT:
-Array has 7 cards: [Advertising, EventManagement, Fabrication, Printing, InteriorWorks, GeneralSupply, ImportExport]
+Array has 8 cards: [Advertising, EventManagement, Fabrication, Printing, InteriorWorks, GeneralSupply, Garments, ImportExport]
 
 Desktop (grid-cols-12):
 Row 1: [col-1..5: Advertising cs-5] [col-6..9: EventManagement cs-4] [col-10..12: Fabrication cs-3]
 Row 2: [col-1..4: Printing cs-4]   [col-5..8: InteriorWorks cs-4]   [col-9..12: GeneralSupply cs-4]
-Row 3: [col-1..12: ImportExport cs-12]
+Row 3: [col-1..4: Garments cs-4] [col-5..12: ImportExport cs-8]
 
-Placed 7/7 cards ✓
+Placed 8/8 cards ✓
 */
 
 const services = [
@@ -122,13 +122,29 @@ const services = [
 
 },
 {
+  id: 'garments',
+  title: "Sakhi'z - Fashion & Apparel",
+  subtitle: 'Fashion · Activewear · Everyday Style',
+  description: 'Modern fashion and everyday activewear with premium fabrics, flattering fits, and accessible trend-forward designs.',
+  image: '/assets/garments.jpeg',
+  imageAlt: 'Sakhi fashion and apparel collection showcasing modern garments and everyday activewear',
+  colSpan: 'lg:col-span-4',
+  tall: false,
+  accent: 'bg-primary/10 text-primary',
+  icon:
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="m16 3-4 2-4-2-3 3 3 3v13h8V9l3-3-3-3Z" />
+    <path d="M9 9h6" />
+  </svg>
+},
+{
   id: 'import-export',
   title: 'Import-Export',
   subtitle: 'Global Trade · Customs · Logistics',
   description: 'International trade facilitation, customs documentation, freight forwarding, and end-to-end import-export logistics for Indian businesses.',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_12285b4ae-1767861701167.png",
   imageAlt: 'Aerial view of busy international cargo port with colorful shipping containers, cranes, and cargo vessels in clear daylight',
-  colSpan: 'lg:col-span-12',
+  colSpan: 'lg:col-span-8',
   tall: false,
   accent: 'bg-accent/10 text-accent-foreground',
   wide: true,
@@ -178,7 +194,7 @@ export default function ServicesBento() {
               <span className="text-xs font-semibold uppercase tracking-widest">Our Services</span>
             </div>
             <h2 className="text-display-lg font-display font-light text-foreground leading-tight tracking-tight">
-              Seven Segments.<br />
+              Eight Segments.<br />
               <span className="text-primary font-normal">One Partner.</span>
             </h2>
           </div>
@@ -197,7 +213,7 @@ export default function ServicesBento() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4">
           {/* Row 1: Advertising (cs-5), EventManagement (cs-4), Fabrication (cs-3) */}
           {/* Row 2: Printing (cs-4), InteriorWorks (cs-4), GeneralSupply (cs-4) */}
-          {/* Row 3: ImportExport (cs-12) */}
+          {/* Row 3: Garments (cs-4), ImportExport (cs-8) */}
           {services?.map((service, index) => (
           /* bento-card: Advertising cs-5 */
           /* bento-card: EventManagement cs-4 */
@@ -205,7 +221,8 @@ export default function ServicesBento() {
           /* bento-card: Printing cs-4 */
           /* bento-card: InteriorWorks cs-4 */
           /* bento-card: GeneralSupply cs-4 */
-          /* bento-card: ImportExport cs-12 */
+          /* bento-card: Garments cs-4 */
+          /* bento-card: ImportExport cs-8 */
           <Link
             key={service?.id}
             href={`/services#${service?.id}`}

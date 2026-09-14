@@ -60,7 +60,7 @@ export default function ServicesHero() {
             { id: 'printing', label: 'Printing' },
             { id: 'interiors', label: 'Interiors' },
             { id: 'supply', label: 'Gen. Supply' },
-            { id: 'germents', label: 'Garments' },
+            { id: 'garments', label: 'Garments' },
             { id: 'import-export', label: 'Import-Export' },
           ]?.map((seg) => (
             <a
