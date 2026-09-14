@@ -119,8 +119,27 @@ const segments = [
   flip: true
 },
 {
-  id: 'import-export',
+  id: 'garments',
   number: '07',
+  title: "Sakhi'z - Fashion & Apparel",
+  tagline: 'Modern • Feminine • Stylish • Accessible',
+  description: 'Curated modern fashion and everyday activewear tailored for style, comfort, and versatile living. We bring together premium fabrics, flattering fits, and accessible trend-forward designs for every occasion.',
+  subServices: [
+    'Everyday Activewear & Athleisure',
+    'Contemporary Western Wear',
+    'Trend-Forward Casual Collections',
+    'Premium Fabric & Quality Crafting',
+    'Inclusive Sizing & Flattering Fits',
+    'Seasonal Styles & Everyday Essentials'
+  ],
+  image: "/assets/garments.jpeg",
+  imageAlt: 'Aerial view of international shipping port with rows of colorful cargo containers, large cranes, and container ships at dock',
+  accent: 'border-l-4 border-accent',
+  flip: false
+},
+{
+  id: 'import-export',
+  number: '08',
   title: 'Import-Export',
   tagline: 'Global Trade · Customs · Freight Forwarding',
   description: 'End-to-end international trade facilitation for Indian businesses. We manage customs documentation, freight forwarding, compliance, and last-mile delivery for both import and export shipments.',
@@ -135,7 +154,7 @@ const segments = [
   image: "https://images.unsplash.com/photo-1602066511755-e4936f41666a",
   imageAlt: 'Aerial view of international shipping port with rows of colorful cargo containers, large cranes, and container ships at dock',
   accent: 'border-l-4 border-accent',
-  flip: false
+  flip: true
 }];
 
 

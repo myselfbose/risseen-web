@@ -112,7 +112,7 @@ export default function StatsSection() {
               Registered in India. Operating Nationally.
             </p>
             <p className="text-sm text-white/30 font-medium">
-              Risseen Merchandise Private Limited — CIN: U74999MH2014PTC258XXX
+              Risseen Merchandise Private Limited — CIN: U73100WB2026PTC288465
             </p>
           </div>
           <div className="flex items-center gap-3">

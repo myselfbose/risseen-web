@@ -31,7 +31,7 @@ export default function ServicesHero() {
         <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8">
           <div className="max-w-2xl">
             <h1 className="text-display-xl lg:text-[4.5rem] font-display font-light text-white leading-[0.95] tracking-tight mb-6">
-              Seven Segments.
+              Eight Segments.
               <br />
               <span style={{ color: 'var(--accent)' }} className="font-normal">One Company.</span>
             </h1>
@@ -52,7 +52,7 @@ export default function ServicesHero() {
         </div>
 
         {/* Segment quick nav */}
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2">
+        <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2">
           {[
             { id: 'advertising', label: 'Advertising' },
             { id: 'events', label: 'Events' },
@@ -60,6 +60,7 @@ export default function ServicesHero() {
             { id: 'printing', label: 'Printing' },
             { id: 'interiors', label: 'Interiors' },
             { id: 'supply', label: 'Gen. Supply' },
+            { id: 'germents', label: 'Garments' },
             { id: 'import-export', label: 'Import-Export' },
           ]?.map((seg) => (
             <a
