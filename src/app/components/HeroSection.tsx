@@ -66,7 +66,7 @@ export default function HeroSection() {
           {/* Status badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-card/60 backdrop-blur-sm text-sm text-muted-foreground mb-8">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="font-medium">7 Business Segments · B2B Focused</span>
+            <span className="font-medium">8 Business Segments · B2B Focused</span>
           </div>
 
           <h1 className="text-hero font-display font-light text-foreground leading-[0.95] tracking-tight mb-6">
