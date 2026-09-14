@@ -15,13 +15,15 @@ const footerGroups = [
       { label: 'Advertising', href: '/services#advertising' },
       { label: 'Event Management', href: '/services#events' },
       { label: 'Fabrication', href: '/services#fabrication' },
+      { label: 'Printing', href: '/services#printing' },
     ],
   },
   {
     links: [
-      { label: 'Printing', href: '/services#printing' },
       { label: 'Interior Works', href: '/services#interiors' },
       { label: 'General Supply', href: '/services#supply' },
+      { label: 'Import & Export', href: '/services#import-export' },
+      { label: "Sakhi'z - Fashion & Apparel", href: '/services#garments' },
     ],
   },
 ];
